@@ -1,0 +1,23 @@
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(wet.png);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    background-attachment: fixed;    
+}
+.login{
+  text-align: left;
+  
+}
+
+form { 
+margin: 10% 45%; 
+width:250px;
+}
+h1{
+    text-align: center;
+    margin: 0 auto; 
+    width:250px;
+    color: azure;
+}
+
