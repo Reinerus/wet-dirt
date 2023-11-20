@@ -100,6 +100,9 @@ html, body {
 p{
     text-align: center;
 }
-p1{
-    margin: 10 00 0; 
+h1{
+    text-align: center;
+    margin: 0 auto; 
+    width:250px;
+    color: black;
 }
