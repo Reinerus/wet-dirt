@@ -43,7 +43,17 @@ html, body {
     margin: 0;
     padding: 0;
     min-height: 100%;
-    background-color: bisque;
+    background: hsla(33, 94%, 88%, 1);
+
+    background: hsla(33, 84%, 80%, 1);
+
+    background: radial-gradient(circle, hsla(33, 84%, 80%, 1) 8%, hsla(33, 80%, 81%, 1) 28%, hsla(33, 83%, 77%, 1) 52%, hsla(33, 42%, 71%, 1) 87%);
+    
+    background: -moz-radial-gradient(circle, hsla(33, 84%, 80%, 1) 8%, hsla(33, 80%, 81%, 1) 28%, hsla(33, 83%, 77%, 1) 52%, hsla(33, 42%, 71%, 1) 87%);
+    
+    background: -webkit-radial-gradient(circle, hsla(33, 84%, 80%, 1) 8%, hsla(33, 80%, 81%, 1) 28%, hsla(33, 83%, 77%, 1) 52%, hsla(33, 42%, 71%, 1) 87%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F7D1A2", endColorstr="#F5D1A6", GradientType=1 );
 }
 
 .nav {
@@ -99,4 +109,78 @@ html, body {
 }
 p{
     text-align: center;
+}
+p1{
+    margin: 10 00 0; 
+    float: inline-start;
+    padding-left: 2%;
+    font-size: xx-large;
+}
+.news img{
+   width: 900px;
+   height: 1000px;
+   float: inline-end;
+}
+p1 img{
+    width: auto;
+    height: 500px;
+border: solid 3px black;
+}   
+.form
+{
+    background-color: white;
+    opacity: 0.89;
+}
+
+.form h2
+{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.form-box
+{
+    position: absolute;
+    width: 50%;
+    height: 420px;
+    margin-top: -855px;
+    margin-left: 50%;
+}  
+.form-box .send
+{
+    text-align: center;
+}
+
+.send p2
+{
+    border: 0;
+    border-radius: 100px;
+    height: 50px;
+    width:150px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    background-color: #e67e22;
+    color: white;
+}
+
+.send p2:hover
+{
+    background-color: #cf6d17;
+}
+
+.input
+{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.form p
+{
+    display: inline;
+}
+
+.mission{
+    padding-bottom: 70%;
 }
