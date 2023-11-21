@@ -13,6 +13,7 @@
     box-sizing: border-box;
     font-family: Raleway;
     color: #777;
+    scroll-behavior: smooth;
 }
 
 html, body {
@@ -115,7 +116,7 @@ html, body {
     font-size: 2.5em;
 }
 
-.main-footer {
+.main-footer {  
     background: hsla(32, 6%, 45%, 1);
 
     background: linear-gradient(90deg, hsla(32, 6%, 45%, 1) 0%, hsla(30, 4%, 40%, 1) 13%, hsla(0, 3%, 28%, 1) 85%, hsla(0, 6%, 28%, 1) 99%);

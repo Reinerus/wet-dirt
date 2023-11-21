@@ -36,7 +36,8 @@ padding-left: 2%;
 * {
     box-sizing: border-box;
     font-family: Raleway;
-    color: #777;
+    color: black;
+    scroll-behavior: smooth;
 }
 
 html, body {
