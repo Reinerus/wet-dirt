@@ -151,6 +151,12 @@ border: solid 3px black;
     text-align: center;
 }
 
+.form-box p {
+    color: black;
+}
+.form-box p2 {
+    color: black;
+}
 .send p2
 {
     border: 0;
