@@ -98,10 +98,9 @@ html, body {
 }
 
 .content-section {
-    background-color: bisque;
+    background-color: transparent;
     margin: 1em;
-    border: solid black 4px;
-    border-top: solid black 3px;
+   
 }
 
 .container {
