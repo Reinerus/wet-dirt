@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Loginstyle.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Login or Signup</h1>
-    <dev class="login">
-        <form id="signupform"> 
+    <form id="signupform"> 
+        <h2>Sign Up</h2>
+        <input name="Email" type="email" placeholder="Email" required>
+        <input name="Name" type="text" placeholder="Name" required>
+        <input name="Password" type="text" placeholder="Password" required>
+        <a href="index.html"><button type="submit">Send</button> </a>
+  </form>  
+
+  <form id="loginform">
+        <h2>Sign In</h2> 
             <input name="Email" type="email" placeholder="Email" required>
             <input name="Name" type="text" placeholder="Name" required>
             <input name="Password" type="text" placeholder="Password" required>
             <a href="index.html"><button type="submit">Send</button> </a>
-
-      </form>  
+  </form>
+<script src="login.js"></script>
 </body>
 </html>
