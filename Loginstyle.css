@@ -5,19 +5,20 @@ body{
     height: 80vh;
     background-attachment: fixed;    
 }
-.login{
-  text-align: left;
-  
-}
 
-form { 
-margin: 10% 45%; 
-width:250px;
-}
-h1{
+h2{
     text-align: center;
     margin: 0 auto; 
     width:250px;
     color: azure;
 }
 
+.Signup {
+  position: relative;
+  display: inline-block;
+}
+
+.loginSection{
+  position: relative;
+  display: inline-block;
+}
