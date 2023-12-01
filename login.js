@@ -12,7 +12,7 @@ function Login(){
 
     if(localStorage.getItem("email")){
         if(password===localStorage.getItem(email)){
-            location.replace("index.html")
+            location.replace("home.html")
         } 
         else {
             alert("Incorrect Password")
