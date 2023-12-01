@@ -4,6 +4,7 @@ body{
     background-position: center;
     height: 80vh;
     background-attachment: fixed;    
+
 }
 
 h2{
@@ -13,12 +14,24 @@ h2{
     color: azure;
 }
 
+#loginSignUp input {
+  margin: 5px;
+}
+
 .Signup {
+  padding: 10px;
+  background-color: rgb(183, 101, 0);
   position: relative;
   display: inline-block;
+  width: 50%;
+  height: 300px;
 }
 
 .loginSection{
+  padding: 10px;
+  background-color: rgb(255, 140, 0);
   position: relative;
   display: inline-block;
+  width: 50%;
+  height: 300px;
 }
