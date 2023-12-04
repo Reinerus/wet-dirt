@@ -17,143 +17,143 @@ closeShopping.addEventListener('click', ()=>{
 let products = [
     {
         id: 1,
-        name: 'product 1',
-        desc: 'description 1',
-        image: '1.png',
-        price: 100
+        name: 'Mudzzarella Sticks',
+        desc: 'Deep fried and delicious sticks of local mud created in house.',
+        image: 'images/mozzarrekea.png',
+        price: 12.99
     },
     {
         id: 2,
-        name: 'product 2',
-        desc: 'description 2',
-        image: '1.png',
-        price: 100
+        name: 'Bloomin Mudions',
+        desc: 'Fried, battered, and finely harvested mud from our own backyard.',
+        image: 'images/blloming_mduios.png',
+        price: 14.99
     },
     {
         id: 3,
-        name: 'product 3',
-        desc: 'description 3',
-        image: '1.png',
-        price: 100
+        name: 'Mud Stuffed Mud',
+        desc: 'Finely pressed mud wrapped in the highest quality local mud in the country.',
+        image: 'images/mudzoneeee.png',
+        price: 9.99
     },
     {
         id: 4,
-        name: 'product 4',
-        desc: 'description 4',
-        image: '1.png',
-        price: 100
+        name: 'Buffalo Mud Dip',
+        desc: 'Shredded mud mixed with buffalo sauce and locally bought cheese.',
+        image: 'images/buffalo_mud_dip.png',
+        price: 19.99
     },
     {
         id: 5,
-        name: 'product 5',
-        desc: 'description 5',
-        image: '1.png',
-        price: 100
+        name: 'Mud Balls',
+        desc: 'Perfectly seasoned and spiced mud balls served with a side of mudinara sauce',
+        image: 'images/mudballs.png',
+        price: 14.99
     },
     {
         id: 6,
-        name: 'product 6',
-        desc: 'description 6',
-        image: '1.png',
-        price: 100
+        name: 'Mudsanga',
+        desc: 'Stacked layers of pasta packed with meat and cheese, covered in mud sauce.   ',
+        image: 'images/mudsagna.png',
+        price: 26.99
     },
     {
         id: 7,
-        name: 'product 7',
-        desc: 'description 7',
-        image: '1.png',
-        price: 100
+        name: 'Mudfredo',
+        desc: 'Pasta cooked al dente and tossed in our creamy homemade alfredo sauce & sliced mud.',
+        image: 'images/fettuccine.png',
+        price: 29.99
     },
     {
         id: 8,
-        name: 'product 8',
-        desc: 'description 8',
-        image: '1.png',
-        price: 100
+        name: 'MLT',
+        desc: 'Finely pressed mud wrapped in the highest quality local mud in the country.',
+        image: 'images/MLT.png',
+        price: 41.99
     },
     {
         id: 9,
-        name: 'product 9',
-        desc: 'description 9',
-        image: '1.png',
-        price: 100
+        name: 'Philly Mudsteak',
+        desc: 'A mudsteak with finely ground mud topped with mud and fried onions.',
+        image: 'images/mudsteak.png',
+        price: 33.99
     },
     {
         id: 10,
-        name: 'product 10',
-        desc: 'description 10',
-        image: '1.png',
-        price: 100
+        name: 'Ceasars Mud Salad',
+        desc: 'Romaine lettuce, parmesan cheese, tomatoes, croutons, & mud.',
+        image: 'images/CSALAD.png',
+        price: 28.99
     },
     {
         id: 11,
-        name: 'product 11',
-        desc: 'description 11',
-        image: '1.png',
-        price: 100
+        name: 'Southwest Mud Salad',
+        desc: 'Slices of grilled spicy chicken breast served on a fresh bed of mixed greens, topped with mud.',
+        image: 'images/southwest_mud.png',
+        price: 29.99
     },
     {
         id: 12,
-        name: 'product 12',
-        desc: 'description 12',
-        image: '1.png',
-        price: 100
+        name: 'Mud Pie',
+        desc: 'A true classic and a staple for any mud based dessert.',
+        image: 'images/mudddd_pie.png',
+        price: 26.99
     },
     {
         id: 13,
-        name: 'product 13',
-        desc: 'description 13',
-        image: '1.png',
-        price: 100
+        name: 'Soft Served Mudcream',
+        desc: 'Freshly made soft served Mud in a waffle cone.',
+        image: 'images/mudcream.png',
+        price: 29.99
     },
     {
         id: 14,
-        name: 'product 14',
-        desc: 'description 14',
-        image: '1.png',
-        price: 100
+        name: 'Angel Mud Cake',
+        desc: 'A soft and plump cake made of our finest mud.',
+        image: 'images/angel_mud.png',
+        price: 41.99
     },
     {
         id: 15,
-        name: 'product 15',
-        desc: 'description 15',
-        image: '1.png',
-        price: 100
+        name: 'Tiramudsu',
+        desc: 'Elegant cake made with espresso and mud.',
+        image: 'images/tiramudsu.png',
+        price: 33.99
     },
     {
         id: 16,
-        name: 'product 16',
-        desc: 'description 16',
-        image: '1.png',
-        price: 100
+        name: 'Mudcuterie Board',
+        desc: 'Aged Cheeses with mud and crackers.',
+        image: 'images/mud_cuterie.png',
+        price: 28.99
     },
     {
         id: 17,
-        name: 'product 17',
-        desc: 'description 17',
-        image: '1.png',
-        price: 100
+        name: 'Mudonnay',
+        desc: 'The finest chardonnay with mud.',
+        image: 'images/mudonnay.png',
+        price: 26.99
     },
     {
         id: 18,
-        name: 'product 18',
-        desc: 'description 18',
-        image: '1.png',
-        price: 100
+        name: 'Mudgarita',
+        desc: 'A well crafted mixed drink that features mud.',
+        image: 'images/mudgariyat.png',
+        price: 29.99
     },
     {
         id: 19,
-        name: 'product 19',
-        desc: 'description 19',
-        image: '1.png',
-        price: 100
+        name: 'Diet Dr Mud',
+        desc: 'The greatest soda ever created.',
+        image: 'images/DRMUD.png',
+        price: 41.99
     },
     {
         id: 20,
-        name: 'product 20',
-        desc: 'description 20',
-        image: '1.png',
-        price: 100
+        name: 'Muddy Water',
+        desc: 'The finest water filtered through pounds of mud.',
+        image: 'images/muddy_water.png',
+        price: 33.99
     },
 ];
 
@@ -194,7 +194,7 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img src="image/${value.image}"/></div>
+                <div><img src="${value.image}"/></div>
                 <div>${value.name}</div>
                 <div>${value.price.toLocaleString()}</div>
                 <div>${value.quantity}</div>
