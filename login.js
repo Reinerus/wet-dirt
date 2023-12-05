@@ -16,13 +16,13 @@ function Signup() {
 
 function Login(){
     var emailLogin = document.getElementById("lemail").value;
-    var password = document.getElementById("lpassword").value;
+    var passwordLogin = document.getElementById("lpassword").value;
     console.log(emailLogin)
 
-    if(emailLogin = localStorage.getItem('email')){
+    if(emailLogin == localStorage.getItem('email')){
         user = JSON.parse(localStorage.getItem(email));
         console.log(username)
-        if(password===localStorage.getItem(email)){
+        if(passwordLogin == password){
             location.replace("home.html")
         } 
         else {
