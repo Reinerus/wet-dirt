@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'Equestria';
+    src: url("https://www.dropbox.com/s/x04iih58ob04d56/Equestria.otf?raw=1");
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .receipt {
+      padding: 3mm;
+      width: 80mm;
+      border: 1px solid black;
+  }
+  .orderNo {
+    width: 100%;
+    text-align: right;
+    padding-bottom: 1mm;
+    font-size: 8pt;
+    font-weight: bold;
+  }
+  
+  .orderNo:empty {
+    display: none;
+  }
+  
+  .headerSubTitle {
+    font-family: 'Equestria', 'Permanent Marker', cursive;
+    text-align: center;
+    font-size: 12pt;
+  }
+  
+  .headerTitle {
+    font-family: 'Equestria', 'Permanent Marker', cursive;
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+  }
+  
+  #location {
+    margin-top: 5pt;
+    text-align: center;
+    font-size: 16pt;
+    font-weight: bold;
+  }
+  
+  #date {
+    margin: 5pt 0px;
+    text-align: center;
+    font-size: 8pt;
+  }
+  
+  #barcode {
+    display: block;
+    margin: 0px auto;
+  }
+  
+  #barcode:empty {
+    display: none;
+  }
+  
+  .watermark {
+     position: absolute;
+     left: 7mm;
+     top: 60mm;
+     width: 75mm;
+     opacity: 0.1;
+  }
+  
+  .keepIt {
+    text-align: center;
+    font-size: 12pt;
+    font-weight: bold;
+  }
+  
+  .keepItBody {
+    text-align: justify;
+    font-size: 8pt;
+  }
+  
+  .item {
+    margin-bottom: 1mm;
+  }
+  
+  .itemRow {
+    display: flex;
+    font-size: 8pt;
+    align-items: baseline;
+  }
+  
+  .itemRow > div {
+    align-items: baseline;
+  }
+  
+  .itemName {
+    font-weight: bold;
+  }
+  
+  .itemPrice {
+    text-align: right;
+    flex-grow: 1;
+  }
+  
+  .itemColor {
+    width: 10px;
+    height: 100%;
+    background: yellow;
+    margin: 0px 2px;
+    padding: 0px;
+  }
+  
+  .itemColor:before {
+    content: "\00a0";
+  }
+  
+  
+  .itemData2 {
+    text-align: right;
+    flex-grow: 1;
+  }
+  
+  .itemData3 {
+    width: 15mm;
+    text-align: right;
+  }
+  
+  .itemQuantity:before {
+    content: "x";
+  }
+  
+  .itemTaxable:after {
+    content: " T";
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #qrcode {
+    align-self: center;
+    flex: 0 0 100px
+  }
+  
+  .totals {
+    flex-grow: 1;
+    align-self: center;
+    font-size: 8pt;
+  }
+  
+  .totals .row {
+    display: flex;
+    text-align: right;
+  }
+  
+  .totals .section {
+    padding-top: 2mm;
+  }
+  
+  .totalRow > div, .total > div {
+    text-align: right;
+    align-items: baseline;
+    font-size: 8pt;
+  }
+  
+  .totals .col1 {
+    text-align: right;
+    flex-grow: 1;
+  }
+  
+  .totals .col2 {
+     width: 22mm;
+  }
+  
+  .totals .col2:empty {
+    display: none;
+  }
+  
+  .totals .col3 {
+    width: 15mm;
+  }
+  
+  .footer {
+    overflow: hidden;
+    margin-top: 5mm;
+    border-radius: 7px;
+    width: 100%;
+    background: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .footer:empty {
+      display: none;
+  }
+  
+  .eta {
+    padding: 1mm 0px;
+  }
+  
+  .eta:empty {
+      display: none;
+  }
+  
+  .eta:before {
+      content: "Estimated time order will be ready: ";
+    font-size: 8pt;
+    display: block;
+  }
+  
+  .etaLabel {
+    font-size: 8pt;
+  }
+  
+  .printType {
+    padding: 1mm 0px;
+    width: 100%;
+    background: grey;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .about {
+    font-size: 12pt;
+    overflow: hidden;
+    background: #FCEC52;
+    color: #3A5743;
+    border-radius: 7px;
+    padding: 0px;
+    position: absolute;
+    width: 500px;
+    text-align: center;
+    left: 50%;
+    margin-top: 50px;
+    margin-left: -250px;
+  }
+  
+  .about li {
+    text-align: left;
+  }

@@ -39,7 +39,7 @@ let products = [
     {
         id: 4,
         name: 'Buffalo Mud Dip',
-        desc: 'Shredded mud mixed with buffalo sauce and locally bought cheese.',
+        desc: 'Shredded mud mixed with buffalo sauce and locally bought  ese.',
         image: 'images/buffalo_mud_dip.png',
         price: 19.99
     },
@@ -221,3 +221,4 @@ function changeQuantity(key, quantity){
     }
     reloadCard();
 }
+localStorage.setItem('listCards[key]', JSON.stringify(listCards[key]));z
