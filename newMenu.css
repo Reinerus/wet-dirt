@@ -225,6 +225,11 @@ header .shopping span{
 .list .item button:hover {
     background-color: #fff9;
     color: black;
+    cursor: pointer;
+}
+
+.list .item button:active {
+    background-color: rgba(222, 222, 222, 0.6);
 }
 
 .listCard{
