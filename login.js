@@ -17,6 +17,8 @@ function Signup() {
 function Login(){
     var emailLogin = document.getElementById("lemail").value;
     var password = document.getElementById("lpassword").value;
+    var manager = document.getElementById("Manage")
+    var managerpass = document.getElementById("M123")
     var storedUserData = localStorage.getItem(emailLogin);
 
     if(storedUserData) {
@@ -32,5 +34,6 @@ function Login(){
     else {
         alert("email does not exist");
     }
+ 
 
 }
