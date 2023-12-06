@@ -17,7 +17,7 @@
     
     background: -webkit-radial-gradient(circle, hsla(33, 84%, 80%, 1) 8%, hsla(33, 80%, 81%, 1) 28%, hsla(33, 83%, 77%, 1) 52%, hsla(33, 42%, 71%, 1) 87%);
     
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F7D1A2", endColorstr="#F5D1A6", GradientType=1 ););
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F7D1A2", endColorstr="#F5D1A6", GradientType=1 );
     background-size: cover;
     background-position: center;
     height: 50vh;
