@@ -4,7 +4,7 @@
     let userInput = document.getElementById("managerPassword").value;
         if(userInput === password){
 
-            location.replace("home.html")
+            location.replace("edit.html")
         } 
         else {
             alert("Incorrect Password");
