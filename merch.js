@@ -14,54 +14,40 @@ closeShopping.addEventListener('click', ()=>{
     body.classList.remove('active');
 })
 
-let products = [
+let mproducts = [
     {
         id: 1,
-        name: 'Mudzzarella Sticks',
-        desc: 'Deep fried and delicious sticks of local mud created in house.',
-        image: 'images/mozzarrekea.png',
+        name: 'Muddy Shirt',
+        desc: 'Rep the Mud everywhere you go!.',
+        image: 'images/mudddddd - Copy.png',
         price: 12.99
     },
     {
         id: 2,
-        name: 'Bloomin Mudions',
-        desc: 'Fried, battered, and finely harvested mud from our own backyard.',
-        image: 'images/blloming_mduios.png',
+        name: 'Muddie',
+        desc: '1 pocket 1 hood and one Mud design is all you need in a good hoodie.',
+        image: 'images/hoodie.jpg',
         price: 14.99
     },
     {
         id: 3,
-        name: 'Mud Stuffed Mud',
-        desc: 'Finely pressed mud wrapped in the highest quality local mud in the country.',
-        image: 'images/mudzoneeee.png',
+        name: 'Mud hat',
+        desc: 'rep the mud on top of your head.',
+        image: 'images/hat shirt.png',
         price: 9.99
     },
     {
         id: 4,
-        name: 'Buffalo Mud Dip',
-        desc: 'Shredded mud mixed with buffalo sauce and locally bought  ese.',
-        image: 'images/buffalo_mud_dip.png',
+        name: 'Wet-Dirt shirt',
+        desc: 'The wettest and dirtiest shirt you will evert own.',
+        image: 'images/shirt temp.png',
         price: 19.99
-    },
-    {
-        id: 5,
-        name: 'Mud Balls',
-        desc: 'Perfectly seasoned and spiced mud balls served with a side of mudinara sauce',
-        image: 'images/mudballs.png',
-        price: 14.99
-    },
-    {
-        id: 6,
-        name: 'Mudsanga',
-        desc: 'Stacked layers of pasta packed with meat and cheese, covered in mud sauce.   ',
-        image: 'images/mudsagna.png',
-        price: 26.99
     },
 ];
 
 let listCards = [];
 function initApp(){
-    products.forEach((value, key)=>{
+    mproducts.forEach((value, key)=>{
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
@@ -78,9 +64,9 @@ initApp();
 
 function addToCard(key){
     if(listCards[key] == null){
-        listCards[key] = products[key];
+        listCards[key] = mproducts[key];
         listCards[key].quantity = 1;
-        prices = products[key].price
+        prices = mproducts[key].price
     }
     reloadCard()
 }
