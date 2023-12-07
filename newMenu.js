@@ -231,9 +231,9 @@ myButton.addEventListener("click", function() {
 });
 
 function storeproductdata() {
-    var id = document.getElementById("id");
-    var desc = document.getElementById("desc");
-    var price = document.getElementById("price");
+    var id = document.getElementById("id").value;
+    var desc = document.getElementById("desc").value;
+    var price = document.getElementById("price").value;
     var data = { id: id, price: price, desc: desc };
 
     var newProduct = {
@@ -244,7 +244,7 @@ function storeproductdata() {
     }
 
     var storedData = JSON.parse(localStorage.getItem("products")) || [];
-    storedData.push(data);
+    storedData.push(newProduct);
     console.log(id)
     localStorage.setItem("products", JSON.stringify(storedData));
   }
