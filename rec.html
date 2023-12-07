@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Sample Receipt</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bangers|Roboto'>
+    <link rel="stylesheet" href="rec.css">
+</head>
+<body>
+  <div class="receipt">
+  <div class="orderNo">
+    Order# <span id="Order #">71</span>: <span id="Order Name">Wet-Dirt</span>
+  </div>
+  <div class="headerSubTitle">
+    Thank you for supporting 
+  </div>
+  <div class="headerTitle">
+    Wet-Dirt
+  </div>
+  <div class="headerSubTitle">
+   The Home of Müd
+  </div>
+  <div id="location">
+    Wet-Dirt NYC
+  </div>
+  <div id="date">
+    December 2023
+  </div>
+  <svg id="barcode"></svg>
+  <div class="keepIt">
+    Keep your receipt!
+  </div>
+  <div class="keepItBody">
+    This original receipt is required to pick up any OnDemand items* or for Returns. Undamaged merchandise can be returned for a refund within 24 hours. Faulty goods can be exchanged anytime during this convention while the vendor hall is open. No returns are allowed for OnDemand items except at the discretion of BronyHouse staff. *Unclaimed on-demand items can be claimed without receipt in the final hours of the convention by describing the order in detail.
+  </div>
+  <hr>
+
+  <!-- Items Purchased -->
+  <div class="items">
+    <div class="item">
+      <div class="itemRow">
+        <div class="itemName">Where There's Trouble</div>
+        <div class="itemPrice itemTaxable">$2.00</div>
+      </div>
+      <div class="itemRow">
+        <div class="itemColor"></div>
+        <div class="itemData1">DNC-P01</div>
+        <div class="itemData2">DaniCojo</div>
+        <div class="itemData3 itemQuantity">10</div>
+      </div>
+      <div class="itemRow">
+        <div class="itemColor"></div>
+        <div class="itemData1">Print</div>
+        <div class="itemData2">Reg(WS) 11x17 Bordered</div>
+        <div class="itemData3">$20.00</div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="itemRow">
+        <div class="itemName">Miraculous Ladybug & Cat Noir</div>
+        <div class="itemPrice itemTaxable">$1.25</div>
+      </div>
+      <div class="itemRow">
+        <div class="itemColor"></div>
+        <div class="itemData1">DNC-P03</div>
+        <div class="itemData2">DaniCojo</div>
+        <div class="itemData3 itemQuantity">10</div>
+      </div>
+      <div class="itemRow">
+        <div class="itemColor"></div>
+        <div class="itemData1">Print</div>
+        <div class="itemData2">Reg(WS) 8.5x11 Borderless</div>
+        <div class="itemData3">$12.25</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Totals -->
+  <hr>
+
+
+  <div class="footer">
+    <div class="eta">December 2023</div>
+    <div class="printType">customer copy</div>
+  </div>
+</div>
+<script src='https://cdn.jsdelivr.net/npm/jsbarcode@3.8.0/dist/barcodes/JsBarcode.code128.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/davidshimjs-qrcodejs@0.0.2/qrcode.min.js'></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,37 +1,67 @@
 body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(wet.png);
     background-size: cover;
+
     background-position: center;
     height: 80vh;
     background-attachment: fixed;    
 
 }
 
-h2{
-    text-align: center;
-    margin: 0 auto; 
-    width:250px;
-    color: azure;
+
+#loginSignUp{
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
+
 
 #loginSignUp input {
   margin: 5px;
 }
 
 .Signup {
-  padding: 10px;
-  background-color: rgb(183, 101, 0);
+  padding: 0px;
+  background-color: honeydew;
   position: relative;
   display: inline-block;
-  width: 50%;
+  width: 500px;
   height: 300px;
+  border: 1px solid;
+  border-radius: 20px;
+}
+
+.Signup h2 {
+  color:rgb(152, 112, 63);
+}
+.Signup ::placeholder {
+  color: rgb(152, 112, 63);
+}
+.Signup p {
+  color: rgb(152, 112, 63);
 }
 
 .loginSection{
-  padding: 10px;
-  background-color: rgb(255, 140, 0);
+  padding: 0px;
+  background-color: rgb(152, 112, 63);
   position: relative;
   display: inline-block;
-  width: 50%;
+  width: 500px;
   height: 300px;
+  border: 1px solid;
+  border-radius: 20px;
 }
+
+.loginSection p {
+  color: honeydew;
+}
+
+.loginSection h2 {
+  color: honeydew;
+}
+
+.submitButton {
+  margin-top: 2%;
+}
+

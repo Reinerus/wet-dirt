@@ -39,7 +39,7 @@ let products = [
     {
         id: 4,
         name: 'Buffalo Mud Dip',
-        desc: 'Shredded mud mixed with buffalo sauce and locally bought cheese.',
+        desc: 'Shredded mud mixed with buffalo sauce and locally bought  ese.',
         image: 'images/buffalo_mud_dip.png',
         price: 19.99
     },
@@ -167,7 +167,7 @@ function initApp(){
         <div class="title">${value.name}</div>
         <div class="desc">${value.desc}</div>
         <div class="price">${value.price.toLocaleString()}</div>
-        <button onclick="addToCard(${key})">Add to Card</button>
+        <button onclick="addToCard(${key})">Add to Cart</button>
         `;
         list.appendChild(newDiv);
     })
@@ -221,3 +221,31 @@ function changeQuantity(key, quantity){
     }
     reloadCard();
 }
+localStorage.setItem('listCards[key]', JSON.stringify(listCards[key]));
+
+var myButton = document.getElementById("myButton");
+myButton.addEventListener("click", function() {
+  var myInput = document.getElementById("myInput");
+  var inputValue = myInput.value;
+  console.log(inputValue);
+});
+
+function storeproductdata() {
+    var id = document.getElementById("id");
+    var desc = document.getElementById("desc");
+    var price = document.getElementById("price");
+    var data = { id: id, price: price, desc: desc };
+
+    var newProduct = {
+        
+        id:id,
+        price:price,
+        desc:desc,
+    }
+
+    var storedData = JSON.parse(localStorage.getItem("products")) || [];
+    storedData.push(data);
+    console.log(id)
+    localStorage.setItem("products", JSON.stringify(storedData));
+  }
+  var storedData = JSON.parse(localStorage.getItem("products")) || [];
