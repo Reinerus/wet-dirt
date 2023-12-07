@@ -221,4 +221,31 @@ function changeQuantity(key, quantity){
     }
     reloadCard();
 }
-localStorage.setItem('listCards[key]', JSON.stringify(listCards[key]));z
+localStorage.setItem('listCards[key]', JSON.stringify(listCards[key]));
+
+var myButton = document.getElementById("myButton");
+myButton.addEventListener("click", function() {
+  var myInput = document.getElementById("myInput");
+  var inputValue = myInput.value;
+  console.log(inputValue);
+});
+
+function storeproductdata() {
+    var id = document.getElementById("id");
+    var desc = document.getElementById("desc");
+    var price = document.getElementById("price");
+    var data = { id: id, price: price, desc: desc };
+
+    var newProduct = {
+        
+        id:id,
+        price:price,
+        desc:desc,
+    }
+
+    var storedData = JSON.parse(localStorage.getItem("products")) || [];
+    storedData.push(data);
+    console.log(id)
+    localStorage.setItem("products", JSON.stringify(storedData));
+  }
+  var storedData = JSON.parse(localStorage.getItem("products")) || [];
