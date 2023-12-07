@@ -1,8 +1,8 @@
     
     function managerlog(){
-    let mpassword = "Manager123";
-    let userpassword = Document.get
-        if(mpassword === "Manager123"){
+    let password = "admin";
+    let userInput = document.getElementById("managerPassword").value;
+        if(userInput === password){
 
             location.replace("home.html")
         } 
