@@ -19,29 +19,29 @@ let mproducts = [
         id: 1,
         name: 'Muddy Shirt',
         desc: 'Rep the Mud everywhere you go!.',
-        image: 'images/mudddddd - Copy.png',
-        price: 12.99
+        image: 'images/merch/mudddddd - Copy.png',
+        price: 119.99
     },
     {
         id: 2,
         name: 'Muddie',
-        desc: '1 pocket 1 hood and one Mud design is all you need in a good hoodie.',
-        image: 'images/hoodie.jpg',
-        price: 14.99
+        desc: 'Hoodie + Mud! What else is gonna keep you warm..',
+        image: 'images/merch/hoodie.png',
+        price: 149.99
     },
     {
         id: 3,
         name: 'Mud hat',
         desc: 'rep the mud on top of your head.',
-        image: 'images/hat shirt.png',
-        price: 9.99
+        image: 'images/merch/hat shirt.png',
+        price: 99.99
     },
     {
         id: 4,
         name: 'Wet-Dirt shirt',
         desc: 'The wettest and dirtiest shirt you will evert own.',
-        image: 'images/shirt temp.png',
-        price: 19.99
+        image: 'images/merch/shirt temp.png',
+        price: 119.99
     },
 ];
 
