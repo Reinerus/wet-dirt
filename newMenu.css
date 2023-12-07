@@ -12,7 +12,7 @@
 * {
     box-sizing: border-box;
     font-family: Raleway;
-    color: #777;
+    color: black;
     scroll-behavior: smooth;
 }
 
@@ -253,7 +253,8 @@ header .shopping span{
     
     background: -webkit-linear-gradient(90deg, hsla(32, 6%, 45%, 1) 0%, hsla(30, 4%, 40%, 1) 13%, hsla(0, 3%, 28%, 1) 85%, hsla(0, 6%, 28%, 1) 99%);
     
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7B746C", endColorstr="#696561", GradientType=1 );  
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7B746C", endColorstr="#696561", GradientType=1 );
+    color: white;
     padding: .25em 0;
 }
 
@@ -266,7 +267,6 @@ header .shopping span{
 .main-footer-container ul {
     flex-grow: 1;
     text-align: end;
-    color:transparent;
 }
 
 .footer-nav li {
