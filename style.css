@@ -9,30 +9,16 @@
     font-style: normal;
 }
 .head {
-    background: hsla(32, 6%, 45%, 1);
-
-    background: linear-gradient(90deg, hsla(32, 6%, 45%, 1) 0%, hsla(30, 4%, 40%, 1) 13%, hsla(0, 3%, 28%, 1) 85%, hsla(0, 6%, 28%, 1) 99%);
-    
-    background: -moz-linear-gradient(90deg, hsla(32, 6%, 45%, 1) 0%, hsla(30, 4%, 40%, 1) 13%, hsla(0, 3%, 28%, 1) 85%, hsla(0, 6%, 28%, 1) 99%);
-    
-    background: -webkit-linear-gradient(90deg, hsla(32, 6%, 45%, 1) 0%, hsla(30, 4%, 40%, 1) 13%, hsla(0, 3%, 28%, 1) 85%, hsla(0, 6%, 28%, 1) 99%);
-    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7B746C", endColorstr="#696561", GradientType=1 );
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/frontpagestorefront.png);
+    background-size:cover;
+    height: 100vh;
     background-attachment: fixed;
-
-    
+    padding-top: 60px;
   }
   .head img{
     margin:0 0 0 0;
   }
-h1{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-padding-left: 2%;
-    
-}
+
 * {
     box-sizing: border-box;
     font-family: Raleway;
@@ -57,48 +43,85 @@ html, body {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F7D1A2", endColorstr="#F5D1A6", GradientType=1 );
 }
 
-.nav {
-    background: hsla(32, 6%, 45%, 1);
-
-    background: linear-gradient(90deg, hsla(32, 6%, 45%, 1) 0%, hsla(30, 4%, 40%, 1) 13%, hsla(0, 3%, 28%, 1) 85%, hsla(0, 6%, 28%, 1) 99%);
-    
-    background: -moz-linear-gradient(90deg, hsla(32, 6%, 45%, 1) 0%, hsla(30, 4%, 40%, 1) 13%, hsla(0, 3%, 28%, 1) 85%, hsla(0, 6%, 28%, 1) 99%);
-    
-    background: -webkit-linear-gradient(90deg, hsla(32, 6%, 45%, 1) 0%, hsla(30, 4%, 40%, 1) 13%, hsla(0, 3%, 28%, 1) 85%, hsla(0, 6%, 28%, 1) 99%);
-    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7B746C", endColorstr="#696561", GradientType=1 );
-}
-
-.nav ul {
+.main-nav ul {
     margin: 0;
 }
 
-.nav li {
+.main-nav li {
     display: inline;
+    padding: 5px;
 }
 
-.nav a {
+.main-nav a {
     display: inline-block;
-    padding: .5em;
     color: white;
     text-decoration: none;
 }
 
 .main-nav {
+    padding: 5px;
     text-align: center;
     font-size: 1.1em;
     font-weight: lighter;
-    border-bottom: 1px solid rgba(255, 255, 255, .3)
 }
 
-.main-nav li {
-    padding: 0 5%;
+.main-nav li:hover {
+    background-color: rgb(93, 93, 93);
 }
+
 
 .nav a:hover {
     background-color: rgba(255, 255, 255, .3)
 }
 
+.sectionprog {
+    padding-top: 10px;
+    text-align: center;
+    margin: auto;
+    border-radius: 30px;
+    width: fit-content;
+    border: 5px solid #743f11;
+    margin-bottom: 40px;
+
+}
+.sectionprog th {
+    padding: 10px;
+    font-size:60px;
+    color: #351900;
+}
+
+.sectionprog td{
+    color: #582900 ;
+    padding: 5px;
+}
+.sectionprog th:nth-child(2){
+    border-left: 2px solid #351900;
+    border-right: 2px solid #351900;
+}
+
+.section4 h1 {
+    color: #743f11;
+    font-size: 60px;
+}
+
+.mission {
+    width: 1200px;
+    height: 300px;
+    margin: auto;
+    background-color:lightgrey;
+    margin-bottom: 40px;
+    border: 2px solid black;
+}
+
+.mission h2{
+    color: black
+}
+.mission p{
+    color: rgb(60, 60, 60);
+    font-size: 25px;
+    text-align: left;
+    padding: 5px, 10px, 5px, 10px;
+}
 
 .menu {
     text-align: center;
@@ -108,25 +131,19 @@ html, body {
     font-weight: normal;
     color: white;
 }
-p{
-    text-align: center;
+
+.section5 th img{
+max-width:100px;
 }
+
 p1{
     margin: 10 00 0; 
     float: inline-start;
     padding-left: 2%;
     font-size: xx-large;
 }
-.news img{
-   width: 900px;
-   height: 1000px;
-   float: inline-end;
-}
-p1 img{
-    width: auto;
-    height: 500px;
-border: solid 3px black;
-}   
+
+
 .form
 {
     background-color: white;
@@ -158,22 +175,6 @@ border: solid 3px black;
 .form-box p2 {
     color: black;
 }
-.send p2
-{
-    border: 0;
-    border-radius: 100px;
-    height: 50px;
-    width:150px;
-    font-size: 20px;
-    margin-bottom: 20px;
-    background-color: #e67e22;
-    color: white;
-}
-
-.send p2:hover
-{
-    background-color: #cf6d17;
-}
 
 .input
 {
@@ -188,6 +189,10 @@ border: solid 3px black;
     display: inline;
 }
 
-.mission{
-    padding-bottom: 70%;
+#welcomeuser {
+    color: white;
+    padding-left: 100px;
+}
+#welcomeusername {
+    display: inline-block;
 }
