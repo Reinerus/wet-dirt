@@ -14,36 +14,6 @@ closeShopping.addEventListener('click', ()=>{
     body.classList.remove('active');
 })
 
-let mproducts = [
-    {
-        id: 1,
-        name: 'Muddy Shirt',
-        desc: 'Rep the Mud everywhere you go!.',
-        image: 'images/merch/mudddddd - Copy.png',
-        price: 119.99
-    },
-    {
-        id: 2,
-        name: 'Muddie',
-        desc: 'Hoodie + Mud! What else is gonna keep you warm..',
-        image: 'images/merch/hoodie.png',
-        price: 149.99
-    },
-    {
-        id: 3,
-        name: 'Mud hat',
-        desc: 'rep the mud on top of your head.',
-        image: 'images/merch/hat shirt.png',
-        price: 99.99
-    },
-    {
-        id: 4,
-        name: 'Wet-Dirt shirt',
-        desc: 'The wettest and dirtiest shirt you will evert own.',
-        image: 'images/merch/shirt temp.png',
-        price: 119.99
-    },
-];
 
 let listCards = [];
 function initApp(){
