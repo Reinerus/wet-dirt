@@ -30,17 +30,7 @@ html, body {
     margin: 0;
     padding: 0;
     min-height: 100%;
-    background: hsla(33, 94%, 88%, 1);
-
-    background: hsla(33, 84%, 80%, 1);
-
-    background: radial-gradient(circle, hsla(33, 84%, 80%, 1) 8%, hsla(33, 80%, 81%, 1) 28%, hsla(33, 83%, 77%, 1) 52%, hsla(33, 42%, 71%, 1) 87%);
-    
-    background: -moz-radial-gradient(circle, hsla(33, 84%, 80%, 1) 8%, hsla(33, 80%, 81%, 1) 28%, hsla(33, 83%, 77%, 1) 52%, hsla(33, 42%, 71%, 1) 87%);
-    
-    background: -webkit-radial-gradient(circle, hsla(33, 84%, 80%, 1) 8%, hsla(33, 80%, 81%, 1) 28%, hsla(33, 83%, 77%, 1) 52%, hsla(33, 42%, 71%, 1) 87%);
-    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F7D1A2", endColorstr="#F5D1A6", GradientType=1 );
+    background: #ffffff;
 }
 
 .main-nav ul {
@@ -56,6 +46,7 @@ html, body {
     display: inline-block;
     color: white;
     text-decoration: none;
+    border-bottom: 1px solid whitesmoke;
 }
 
 .main-nav {
@@ -108,9 +99,7 @@ html, body {
     width: 1200px;
     height: 300px;
     margin: auto;
-    background-color:lightgrey;
     margin-bottom: 40px;
-    border: 2px solid black;
 }
 
 .mission h2{
@@ -119,7 +108,7 @@ html, body {
 .mission p{
     color: rgb(60, 60, 60);
     font-size: 25px;
-    text-align: left;
+    text-align: center;
     padding: 5px, 10px, 5px, 10px;
 }
 
@@ -156,6 +145,13 @@ p1{
     padding-top: 20px;
 }
 
+#mudtest{
+
+    float: left;
+}
+
+
+
 .form-box
 {
     position: absolute;
@@ -189,10 +185,85 @@ p1{
     display: inline;
 }
 
-#welcomeuser {
-    color: white;
-    padding-left: 100px;
-}
+
 #welcomeusername {
     display: inline-block;
+    color: rgb(205, 205, 205);
+    font-size: 25px;
+}
+#welcome {
+    color: white;
+    font-size: 30px;
+    display: inline-block;
+}
+
+.section5 table {
+    margin: auto;
+}
+
+.section5 th {
+    height: 170px;
+    width: 300px;
+    background-color: rgb(203, 175, 140);
+    border: 2px solid black;
+    border-radius: 44px;
+}
+
+.section5 th:hover {
+    background-size: 50%;
+}
+
+#firstimage {
+    background-image: url(images/menu_picture.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+#firstimage:hover{
+    background-size: 110%;    
+}
+#secondimage {
+    background-image: url(images/merch_picture.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+#secondimage:hover{
+    background-size: 110%;
+}
+
+
+#thirdimage {
+    background-image: url(images/about_picture.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+#thirdimage:hover{
+    background-size: 110%;
+}
+.section5 td{
+    margin: 30px;
+}
+
+.section5 h1 {
+    font-size: 25px;
+    color: #351900;
+}
+
+.secondhead {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/mud_cuterie.png);
+    background-size:cover;
+    height: 60vh;
+    background-attachment: fixed;
+    padding-top: 60px;
+    margin-bottom: 80px;
+}
+
+.secondhead h1{
+    color: #c15a01;
+    font-size: 45px;
+}
+.secondhead h3{
+    color: #e8c4a4;
+    font-size: 75px;
 }
