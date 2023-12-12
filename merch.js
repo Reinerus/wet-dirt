@@ -14,6 +14,12 @@ closeShopping.addEventListener('click', ()=>{
     body.classList.remove('active');
 })
 
+
+
+let listCards = [];
+function initApp(){
+    mproducts.forEach((value, key)=>{
+
 let products = [
     {
         id: 1,
@@ -62,6 +68,7 @@ let products = [
 let listCards = [];
 function initApp(){
     products.forEach((value, key)=>{
+
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
@@ -78,9 +85,11 @@ initApp();
 
 function addToCard(key){
     if(listCards[key] == null){
-        listCards[key] = products[key];
+
+        listCards[key] = mproducts[key];
         listCards[key].quantity = 1;
-        prices = products[key].price
+        prices = mproducts[key].price
+
     }
     reloadCard()
 }
