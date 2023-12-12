@@ -3,8 +3,7 @@
     <head>
         <title>Wet Dirt | Menu</title>
         <meta name="description" content="This is the description">
-
-        <link rel="stylesheet" href="merch.css" />
+        <link rel="stylesheet" href="newMenu.css" />
     </head>
     <body>
         <header class="main-header">
@@ -14,14 +13,14 @@
                     <li><a href="menu.html">MENU</a></li>
                     <li><a href="about.HTML">ABOUT</a></li>
                     <li><a href="index.html#about">MISSION STATEMENT</a></li>
-                    <li><a href="merch.html">MERCH</a></li>
-
+                    <li><a href="#">MERCH</a></li>
                     <li><a href="apply.html">APPLY</a></li>
                     <li><a href="home.html#contact">CONTACT US</a></li>
                 </ul>
             </nav>
             <h1 class="menu">Our Menu</h1>
         </header>
+
 
         <div class="container">
             <header>
@@ -31,49 +30,16 @@
                     <span class="quantity">0</span>
                 </div>
             </header>
-
-            <div class="list"><script> mproducts = [
-                {
-                    id: 1,
-                    name: 'Müddy Shirt',
-                    desc: 'Rep the Müd everywhere you go!.',
-                    image: 'images/merch/mudddddd - Copy.png',
-                    price: 119.99
-                },
-                {
-                    id: 2,
-                    name: 'Müddie',
-                    desc: 'Hoodie + Müd! What else is gonna keep you warm..',
-                    image: 'images/merch/hoodie.png',
-                    price: 149.99
-                },
-                {
-                    id: 3,
-                    name: 'Müd hat',
-                    desc: 'rep the Müd on top of your head.',
-                    image: 'images/merch/hat shirt.png',
-                    price: 99.99
-                },
-                {
-                    id: 4,
-                    name: 'Wet-Dirt shirt',
-                    desc: 'The wettest and dirtiest shirt you will evert own.',
-                    image: 'images/merch/shirt temp.png',
-                    price: 119.99
-                },
-            ];</script>
-            </div>
             <div class="list"></div>
         </div>
         <div class="card">
             <h1>Cart</h1>
             <ul class="listCard"></ul>
             <div class="checkOut">
-                <div class="total">0</div>
+                <button class="total" type="button" onclick="checkOut()">0</button>
                 <div class="closeShopping">Close</div>
             </div>
         </div>
-
         <script src="merch.js"></script>
 
         <footer class="main-footer">
@@ -105,5 +71,5 @@
                 </ul>
             </div>
         </footer>
-        <script src="newMenu.js"></script>
+        <script src="merch.js"></script>
     </body>
