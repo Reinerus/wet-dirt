@@ -15,9 +15,60 @@ closeShopping.addEventListener('click', ()=>{
 })
 
 
+
 let listCards = [];
 function initApp(){
     mproducts.forEach((value, key)=>{
+
+let products = [
+    {
+        id: 1,
+        name: 'Mudzzarella Sticks',
+        desc: 'Deep fried and delicious sticks of local mud created in house.',
+        image: 'images/mozzarrekea.png',
+        price: 12.99
+    },
+    {
+        id: 2,
+        name: 'Bloomin Mudions',
+        desc: 'Fried, battered, and finely harvested mud from our own backyard.',
+        image: 'images/blloming_mduios.png',
+        price: 14.99
+    },
+    {
+        id: 3,
+        name: 'Mud Stuffed Mud',
+        desc: 'Finely pressed mud wrapped in the highest quality local mud in the country.',
+        image: 'images/mudzoneeee.png',
+        price: 9.99
+    },
+    {
+        id: 4,
+        name: 'Buffalo Mud Dip',
+        desc: 'Shredded mud mixed with buffalo sauce and locally bought  ese.',
+        image: 'images/buffalo_mud_dip.png',
+        price: 19.99
+    },
+    {
+        id: 5,
+        name: 'Mud Balls',
+        desc: 'Perfectly seasoned and spiced mud balls served with a side of mudinara sauce',
+        image: 'images/mudballs.png',
+        price: 14.99
+    },
+    {
+        id: 6,
+        name: 'Mudsanga',
+        desc: 'Stacked layers of pasta packed with meat and cheese, covered in mud sauce.   ',
+        image: 'images/mudsagna.png',
+        price: 26.99
+    },
+];
+
+let listCards = [];
+function initApp(){
+    products.forEach((value, key)=>{
+
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
@@ -34,9 +85,11 @@ initApp();
 
 function addToCard(key){
     if(listCards[key] == null){
+
         listCards[key] = mproducts[key];
         listCards[key].quantity = 1;
         prices = mproducts[key].price
+
     }
     reloadCard()
 }
