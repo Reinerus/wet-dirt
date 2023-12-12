@@ -8,23 +8,6 @@
     font-weight: normal;
     font-style: normal;
 }
-.head {
-    background: hsla(33, 84%, 80%, 1);
-
-    background: radial-gradient(circle, hsla(33, 84%, 80%, 1) 8%, hsla(33, 80%, 81%, 1) 28%, hsla(33, 83%, 77%, 1) 52%, hsla(33, 42%, 71%, 1) 87%);
-    
-    background: -moz-radial-gradient(circle, hsla(33, 84%, 80%, 1) 8%, hsla(33, 80%, 81%, 1) 28%, hsla(33, 83%, 77%, 1) 52%, hsla(33, 42%, 71%, 1) 87%);
-    
-    background: -webkit-radial-gradient(circle, hsla(33, 84%, 80%, 1) 8%, hsla(33, 80%, 81%, 1) 28%, hsla(33, 83%, 77%, 1) 52%, hsla(33, 42%, 71%, 1) 87%);
-    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F7D1A2", endColorstr="#F5D1A6", GradientType=1 ););
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-    background-attachment: fixed;
-
-    
-  }
   .head img{
     margin:0 0 0 0;
   }
@@ -57,57 +40,63 @@ html, body {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F7D1A2", endColorstr="#F5D1A6", GradientType=1 );
 }
 
-.nav {
-    background: hsla(32, 6%, 45%, 1);
-
-    background: linear-gradient(90deg, hsla(32, 6%, 45%, 1) 0%, hsla(30, 4%, 40%, 1) 13%, hsla(0, 3%, 28%, 1) 85%, hsla(0, 6%, 28%, 1) 99%);
-    
-    background: -moz-linear-gradient(90deg, hsla(32, 6%, 45%, 1) 0%, hsla(30, 4%, 40%, 1) 13%, hsla(0, 3%, 28%, 1) 85%, hsla(0, 6%, 28%, 1) 99%);
-    
-    background: -webkit-linear-gradient(90deg, hsla(32, 6%, 45%, 1) 0%, hsla(30, 4%, 40%, 1) 13%, hsla(0, 3%, 28%, 1) 85%, hsla(0, 6%, 28%, 1) 99%);
-    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7B746C", endColorstr="#696561", GradientType=1 );
-}
-
-.nav ul {
-    margin: 0;
-}
-
-.nav li {
-    display: inline;
-}
-
-.nav a {
-    display: inline-block;
-    padding: .5em;
-    color: white;
-    text-decoration: none;
-}
-
-.main-nav {
-    text-align: center;
-    font-size: 1.1em;
-    font-weight: lighter;
-    border-bottom: 1px solid rgba(255, 255, 255, .3)
-}
-
-.main-nav li {
-    padding: 0 5%;
-}
-
-.nav a:hover {
-    background-color: rgba(255, 255, 255, .3)
-}
-
-
-.menu {
+.aboutus {
     text-align: center;
     margin: 0;
     font-size: 4em;
     font-family: "Booter - Zero Zero";
     font-weight: normal;
     color: white;
+    padding: 0px;
+    display: inline-block;
 }
+
+
+.main-header {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/about_picture.jpg);
+    background-size:cover;
+    height: 60vh;
+    background-attachment: fixed;
+    padding-top: 60px;
+}
+.main-nav {
+    padding: 5px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+.main-nav ul {
+    margin: 0;
+}
+
+.main-nav li {
+    display: inline;
+    padding: 5px;
+}
+
+.main-nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.main-nav {
+    padding: 5px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+
+.main-nav li:hover {
+    background-color: rgb(93, 93, 93);
+}
+
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3)
+}
+
 p{
     text-align: center;
 }

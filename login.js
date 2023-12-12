@@ -19,11 +19,15 @@ function Login(){
     var password = document.getElementById("lpassword").value;
     var storedUserData = localStorage.getItem(emailLogin);
 
+
     if (password != ""){
      if(storedUserData) {
             var storedUser = JSON.parse(storedUserData)
             if(password === storedUser.password){
-                location.replace("home.html")
+                // location.replace("home.html");
+                siteUser = username;
+                console.log(siteUser);
+
             } 
         else {
             alert("Incorrect Password");
@@ -33,6 +37,21 @@ function Login(){
     else {
         alert("email does not exist");
     }
- 
+}
 
+function WelcomeMyUser (){
+
+    var storedUserData = localStorage.getItem(emailLogin,username)
+    var storedUser = JSON.parse(storedUserData)
+    
+    storedUser = {
+        username:username,
+        password:password,
+        email:email,
+    }
+
+    var paragragh = document.getElementById("welcomeusername");
+    var text = document.createTextNode(username);
+
+    paragragh.appendChild(text);
 }
