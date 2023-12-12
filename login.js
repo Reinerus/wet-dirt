@@ -19,14 +19,15 @@ function Login(){
     var password = document.getElementById("lpassword").value;
     var storedUserData = localStorage.getItem(emailLogin);
 
-    if(storedUserData) {
-        var storedUser = JSON.parse(storedUserData)
-        if(password === storedUser.password){
-
-            location.replace("home.html")
-        } 
+    if (password != ""){
+     if(storedUserData) {
+            var storedUser = JSON.parse(storedUserData)
+            if(password === storedUser.password){
+                location.replace("home.html")
+            } 
         else {
             alert("Incorrect Password");
+            }
         }
     }
     else {

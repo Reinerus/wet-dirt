@@ -183,6 +183,17 @@ function initApp(){
 }
 initApp();
 
+function loadCartFromStorage(){
+    listCards = JSON.parse(localStorage.getItem('cartItems')) || [];
+    reloadCard()
+}
+
+loadCartFromStorage();
+
+function saveCartToStorage(){
+    localStorage.setItem('cartItems', JSON.stringify(listCards));
+}
+
 function addToCard(key){
     if(listCards[key] == null){
         listCards[key] = products[key];
@@ -190,6 +201,7 @@ function addToCard(key){
         prices = products[key].price
     }
     reloadCard()
+    saveCartToStorage();
 }
 
 function reloadCard(){
@@ -219,6 +231,7 @@ function reloadCard(){
     })
     total.innerText = totalPrice.toLocaleString();
     quantity.innerText = count;
+    saveCartToStorage()
 }
 
 function changeQuantity(key, quantity){
@@ -228,6 +241,7 @@ function changeQuantity(key, quantity){
         listCards[key].quantity = quantity;
         listCards[key].price = quantity * prices;
     }
+    saveCartToStorage()
     reloadCard();
 }
 localStorage.setItem('listCards[key]', JSON.stringify(listCards[key]));
@@ -239,6 +253,9 @@ myButton.addEventListener("click", function() {
   console.log(inputValue);
 });
 
+function checkOut(){
+    location.replace("payment.html")
+}
 
 function storeproductdata() {
     var id = document.getElementById("id").value;

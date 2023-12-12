@@ -129,7 +129,7 @@ html, body {
   
   .container {
     background-color: #f2f2f2;
-    padding: 5px 20px 15px 20px;
+    padding: 5px 20px 95px 20px;
     border: 1px solid lightgrey;
     border-radius: 3px;
   }
@@ -168,17 +168,12 @@ html, body {
   .btn:hover {
     background-color: #45a049;
   }
-  
-  span.price {
-    float: right;
-    color: grey;
-  }
 
   .card {
     position:fixed;
     top: 0;
     left: 75%;
-    width: 500px;
+    width: 400px;
     background-color: #453E3B;
     height: 100vh;
     overflow-y: scroll;
@@ -199,7 +194,6 @@ html, body {
     bottom: 0;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
 }
 
 .card .checkOut div{
