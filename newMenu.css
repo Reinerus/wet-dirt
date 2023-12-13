@@ -72,6 +72,7 @@ html, body {
     font-family: "Booter - Zero Zero";
     font-weight: normal;
     color: white;
+    text-decoration: underline;
 }
 
 
@@ -282,4 +283,38 @@ header .shopping span{
 .footer-nav img {
     width: 30px;
     height: 30px;
+}
+
+.sectionOne {
+    height: 60vh;
+}
+.meat {
+    margin: auto;
+}
+
+.meat p{
+    padding-top: 50px;
+    margin: auto;
+    font-size: 25px;
+    width: 700px;
+}
+.meat img {
+    float: right;
+}
+
+.applytoday {
+    margin: auto;
+
+
+}
+
+
+.applytoday p{
+    padding-top: 40px;
+    font-size: 25px;
+    width: 700px;
+}
+.applytoday input{
+    margin: auto;
+    cursor: pointer;
 }

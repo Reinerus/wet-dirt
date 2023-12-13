@@ -31,14 +31,23 @@ html, body {
 .aboutus {
     text-align: center;
     margin: 0;
-    font-size: 4em;
+    padding: 20px;
+    -webkit-text-stroke: #453E3B; 
+    font-size: 45px;
     font-family: "Booter - Zero Zero";
     font-weight: normal;
     color: white;
-    padding: 0px;
-    display: inline-block;
+    text-decoration: underline;
 }
-
+.aboutustwo {
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+    width: 600px;
+}
 
 .main-header {
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/about_picture.jpg);

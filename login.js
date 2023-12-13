@@ -24,9 +24,8 @@ function Login(){
      if(storedUserData) {
             var storedUser = JSON.parse(storedUserData)
             if(password === storedUser.password){
-                // location.replace("home.html");
-                siteUser = username;
-                console.log(siteUser);
+                location.replace("home.html");
+
 
             } 
         else {
