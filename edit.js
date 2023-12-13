@@ -1,28 +1,4 @@
-function storeProductData() {
-    var itemName = document.getElementById('id').value;
-    var itemPrice = document.getElementById('price').value;
-    var itemImg = document.getElementById('Img').value;
-    var itemDesc = document.getElementById('desc').value;
 
-    var newProduct = {
-        name: itemName,
-        price: itemPrice,
-        img: itemImg,
-        desc: itemDesc
-    };
-
-    
-    var productList = JSON.parse(localStorage.getItem('productList')) || [];
-
-
-    productList.push(newProduct);
-
- 
-    localStorage.setItem('productList', JSON.stringify(productList));
-
-
-    alert('Product added successfully!');
-}
 let products = [
     {
         id: 1,
@@ -165,6 +141,54 @@ let products = [
         price: 33.99
     },
 ];
-var mergedProducts = [...products, newProduct];
 
-console.log(mergedProducts);
+let mergedProducts = [];
+
+function storeProductData() {
+    var itemName = document.getElementById('id').value;
+    var itemPrice = document.getElementById('price').value;
+    var itemImg = document.getElementById('Img').value;
+    var itemDesc = document.getElementById('desc').value;
+
+    var newProduct = {
+        name: itemName,
+        price: itemPrice,
+        img: itemImg,
+        desc: itemDesc
+    };
+
+    mergedProducts.push(newProduct);
+
+    // Retrieve existing products from local storage or create an empty array
+    var productList = JSON.parse(localStorage.getItem('productList')) || [];
+
+    // Add the new product to the list
+    productList.push(newProduct);
+
+    // Save the updated list back to local storage
+    localStorage.setItem('productList', JSON.stringify(productList));
+
+    // Update the merged list and log it to the console
+    getMergedProducts();
+
+    alert('Product added successfully!');
+
+    localStorage.setItem('productList', JSON.stringify(productList));
+
+    // Redirect to the shopping page after adding a product
+    window.location.href = 'newMenu.html';
+}
+
+function getMergedProducts() {
+    // Retrieve the merged list from local storage
+    var productList = JSON.parse(localStorage.getItem('productList')) || [];
+
+    // Merge the existing products with the added products
+    var finalMergedProducts = products.concat(productList);
+
+    // Log the merged list to the console
+    console.log(finalMergedProducts);
+}
+
+// Initial call to display the merged list
+getMergedProducts();

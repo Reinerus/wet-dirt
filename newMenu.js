@@ -6,13 +6,19 @@ let body = document.querySelector('body');
 let total = document.querySelector('.total');
 let quantity = document.querySelector('.quantity');
 
+
 openShopping.addEventListener('click', ()=>{
     body.classList.add('active');
-})
+});
+
 
 closeShopping.addEventListener('click', ()=>{
     body.classList.remove('active');
-})
+});
+
+
+let savedProducts = JSON.parse(localStorage.getItem('products'))
+
 
 let products = [
     {
@@ -32,7 +38,7 @@ let products = [
     {
         id: 3,
         name: 'Müd Stuffed Müd',
-        desc: 'Finely pressed Müd wrapped in the highest quality l ocal Müd in the country.',
+        desc: 'Finely pressed Müd wrapped in the highest quality local Müd in the country.',
         image: 'images/mudzoneeee.png',
         price: 9.99
     },
@@ -46,7 +52,7 @@ let products = [
     {
         id: 5,
         name: 'Müd Balls',
-        desc: 'Perfectly seasoned and spiced Müd balls served with a side of Müdinara sauce',
+        desc: 'Perfectly seasoned and spiced Müd balls served with a side of Müdinara sauce', 
         image: 'images/mudballs.png',
         price: 14.99
     },
@@ -156,14 +162,18 @@ let products = [
         price: 33.99
     },
 ];
-var storedItems = localStorage.getItem("storeproductdata");
+var storedItems = localStorage.getItem("cartItems");
+
 
 if (storedItems) {
     var items = JSON.parse(storedItems);
 
 
-    products = products.concat(items);
+
+
+    listCards = listCards.concat(items);
 }
+
 
 console.log(products);
 let listCards = [];
@@ -183,19 +193,23 @@ function initApp(){
 }
 initApp();
 
+
 function loadCartFromStorage(){
     listCards = JSON.parse(localStorage.getItem('cartItems')) || [];
     reloadCard()
 }
 
+
 loadCartFromStorage();
+
 
 function saveCartToStorage(){
     localStorage.setItem('cartItems', JSON.stringify(listCards));
 }
 
+
 function addToCard(key){
-    if(listCards[key] == null){
+    if(listCards[key] == undefined){
         listCards[key] = products[key];
         listCards[key].quantity = 1;
         prices = products[key].price
@@ -204,28 +218,32 @@ function addToCard(key){
     saveCartToStorage();
 }
 
+
 function reloadCard(){
     listCard.innerHTML = '';
     let count = 0;
     let totalPrice = 0;
+    function isValidValue(value) {
+        return value !== null && value !== undefined;
+    }
     listCards.forEach((value, key) => {
-        totalPrice = totalPrice + value.price;
-        count = count + value.quantity;
-
-        if(value != null){
+        if (isValidValue(value)) {
+            totalPrice = totalPrice + (isValidValue(value.price) ? value.price : 0);
+            count = count + (isValidValue(value.quantity) ? value.quantity : 0);
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img src="${value.image}"/></div>
-                <div>${value.name}</div>
-                <div>${value.price.toLocaleString()}</div>
-                <div>${value.quantity}</div>
+                <div><img src="${isValidValue(value.image) ? value.image : ''}"/></div>
+                <div>${isValidValue(value.name) ? value.name : ''}</div>
+                <div>${isValidValue(value.price) ? value.price.toLocaleString() : ''}</div>
+                <div>${isValidValue(value.quantity) ? value.quantity : ''}</div>
                 <div>
-                    <button onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
+                    <button onclick="changeQuantity(${key}, ${isValidValue(value.quantity) ? value.quantity - 1 : 0})">-</button>
                     <div class="count">${value.quantity}</div>
-                    <button onclick="changeQuantity(${key}, ${value.quantity + 1})">+</button>
+                    <button onclick="changeQuantity(${key}, ${isValidValue(value.quantity) ? value.quantity + 1 : 1})">+</button>
                     </div>
             `;
             listCard.appendChild(newDiv);
+
 
         }
     })
@@ -233,6 +251,7 @@ function reloadCard(){
     quantity.innerText = count;
     saveCartToStorage()
 }
+
 
 function changeQuantity(key, quantity){
     if(quantity == 0){
@@ -244,24 +263,21 @@ function changeQuantity(key, quantity){
     saveCartToStorage()
     reloadCard();
 }
+
+
 localStorage.setItem('listCards[key]', JSON.stringify(listCards[key]));
 
-var myButton = document.getElementById("myButton");
-myButton.addEventListener("click", function() {
-  var myInput = document.getElementById("myInput");
-  var inputValue = myInput.value;
-  console.log(inputValue);
-});
 
 function checkOut(){
     location.replace("payment.html")
 }
 
+
 function storeproductdata() {
     var id = document.getElementById("id").value;
     var desc = document.getElementById("desc").value;
     var price = document.getElementById("price").value;
-    var data = { id: id, price: price, desc: desc };
+
 
     var newProduct = {
         id: id,
@@ -269,11 +285,15 @@ function storeproductdata() {
         desc: desc,
     };
 
+
     var storedData = JSON.parse(localStorage.getItem("products")) || [];
     storedData.push(newProduct);
     console.log(id);
     localStorage.setItem("products", JSON.stringify(storedData));
 }
 
+
 var storedData = JSON.parse(localStorage.getItem("products")) || [];
+
+
 products = products.concat(storedData);
