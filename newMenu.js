@@ -158,13 +158,13 @@ let products = [
         price: 33.99
     },
 ];
-var storedItems = localStorage.getItem("storeproductdata");
+var storedItems = localStorage.getItem("cartItems");
 
 if (storedItems) {
     var items = JSON.parse(storedItems);
 
 
-    products = products.concat(items);
+    listCards = listCards.concat(items);
 }
 
 console.log(products);
@@ -197,7 +197,7 @@ function saveCartToStorage(){
 }
 
 function addToCard(key){
-    if(listCards[key] == null){
+    if(listCards[key] == undefined){
         listCards[key] = products[key];
         listCards[key].quantity = 1;
         prices = products[key].price
@@ -210,21 +210,23 @@ function reloadCard(){
     listCard.innerHTML = '';
     let count = 0;
     let totalPrice = 0;
+    function isValidValue(value) {
+        return value !== null && value !== undefined;
+    }
     listCards.forEach((value, key) => {
-        totalPrice = totalPrice + value.price;
-        count = count + value.quantity;
-
-        if(value != null){
+        if (isValidValue(value)) {
+            totalPrice = totalPrice + (isValidValue(value.price) ? value.price : 0);
+            count = count + (isValidValue(value.quantity) ? value.quantity : 0);
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img src="${value.image}"/></div>
-                <div>${value.name}</div>
-                <div>${value.price.toLocaleString()}</div>
-                <div>${value.quantity}</div>
+                <div><img src="${isValidValue(value.image) ? value.image : ''}"/></div>
+                <div>${isValidValue(value.name) ? value.name : ''}</div>
+                <div>${isValidValue(value.price) ? value.price.toLocaleString() : ''}</div>
+                <div>${isValidValue(value.quantity) ? value.quantity : ''}</div>
                 <div>
-                    <button onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
+                    <button onclick="changeQuantity(${key}, ${isValidValue(value.quantity) ? value.quantity - 1 : 0})">-</button>
                     <div class="count">${value.quantity}</div>
-                    <button onclick="changeQuantity(${key}, ${value.quantity + 1})">+</button>
+                    <button onclick="changeQuantity(${key}, ${isValidValue(value.quantity) ? value.quantity + 1 : 1})">+</button>
                     </div>
             `;
             listCard.appendChild(newDiv);
@@ -249,13 +251,6 @@ function changeQuantity(key, quantity){
 
 localStorage.setItem('listCards[key]', JSON.stringify(listCards[key]));
 
-var myButton = document.getElementById("myButton");
-myButton.addEventListener("click", function() {
-  var myInput = document.getElementById("myInput");
-  var inputValue = myInput.value;
-  console.log(inputValue);
-});
-
 function checkOut(){
     location.replace("payment.html")
 }
@@ -264,7 +259,6 @@ function storeproductdata() {
     var id = document.getElementById("id").value;
     var desc = document.getElementById("desc").value;
     var price = document.getElementById("price").value;
-    var data = { id: id, price: price, desc: desc };
 
     var newProduct = {
         id: id,
