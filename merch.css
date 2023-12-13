@@ -20,65 +20,67 @@ html, body {
     margin: 0;
     padding: 0;
     min-height: 100%;
-    background: rgb(255, 255, 255);
+    background: hsla(33, 94%, 88%, 1);
+
+    background: radial-gradient(circle, hsla(33, 94%, 88%, 1) 0%, hsla(33, 50%, 79%, 1) 68%);
+    
+    background: -moz-radial-gradient(circle, hsla(33, 94%, 88%, 1) 0%, hsla(33, 50%, 79%, 1) 68%);
+    
+    background: -webkit-radial-gradient(circle, hsla(33, 94%, 88%, 1) 0%, hsla(33, 50%, 79%, 1) 68%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FDE2C2", endColorstr="#E4CCAE", GradientType=1 );
 }
 
-.main-nav ul {
+.nav ul {
     margin: 0;
 }
 
-.main-nav li {
+.nav li {
     display: inline;
-    padding: 5px;
 }
 
-.main-nav a {
+.nav a {
     display: inline-block;
+    padding: .5em;
     color: white;
     text-decoration: none;
-    border-bottom: 1px solid whitesmoke;
 }
 
 .main-nav {
-    padding: 5px;
     text-align: center;
     font-size: 1.1em;
     font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3)
 }
 
-.main-nav li:hover {
-    background-color: rgb(93, 93, 93);
+.main-nav li {
+    padding: 0 5%;
 }
-
 
 .nav a:hover {
     background-color: rgba(255, 255, 255, .3)
 }
 
 .main-header {
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/menu_picture.jpg);
-    background-size:cover;
-    height: 60vh;
-    background-attachment: fixed;
-    padding-top: 60px;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+    background: hsla(32, 6%, 45%, 1);
+
+    background: linear-gradient(90deg, hsla(32, 6%, 45%, 1) 0%, hsla(30, 4%, 40%, 1) 13%, hsla(0, 3%, 28%, 1) 85%, hsla(0, 6%, 28%, 1) 99%);
+    
+    background: -moz-linear-gradient(90deg, hsla(32, 6%, 45%, 1) 0%, hsla(30, 4%, 40%, 1) 13%, hsla(0, 3%, 28%, 1) 85%, hsla(0, 6%, 28%, 1) 99%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(32, 6%, 45%, 1) 0%, hsla(30, 4%, 40%, 1) 13%, hsla(0, 3%, 28%, 1) 85%, hsla(0, 6%, 28%, 1) 99%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7B746C", endColorstr="#696561", GradientType=1 );
 }
 
 .menu {
     text-align: center;
     margin: 0;
-    padding: 20px;
-    -webkit-text-stroke: #453E3B; 
-    font-size: 45px;
-    font-family: "Booter - Zero Zero";
-    font-weight: normal;
-    color: white;
-}
-
-
-#MenuDrescription{
-    text-align: center;
-    margin: 0;
-    font-size: 20px;
+    font-size: 4em;
     font-family: "Booter - Zero Zero";
     font-weight: normal;
     color: white;
@@ -121,9 +123,6 @@ header .shopping span{
     left: 80%;
     padding:3px 10px; 
 }
-
-
-
 
 
 .list {
@@ -283,3 +282,10 @@ header .shopping span{
     width: 30px;
     height: 30px;
 }
+    .list img{
+    width: 300px;
+    height: 200px;
+}   
+=======
+}
+

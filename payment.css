@@ -56,57 +56,192 @@ html, body {
     
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F7D1A2", endColorstr="#F5D1A6", GradientType=1 );
 }
-.main-nav ul {
+.nav {
+    background: hsla(32, 6%, 45%, 1);
+
+    background: linear-gradient(90deg, hsla(32, 6%, 45%, 1) 0%, hsla(30, 4%, 40%, 1) 13%, hsla(0, 3%, 28%, 1) 85%, hsla(0, 6%, 28%, 1) 99%);
+    
+    background: -moz-linear-gradient(90deg, hsla(32, 6%, 45%, 1) 0%, hsla(30, 4%, 40%, 1) 13%, hsla(0, 3%, 28%, 1) 85%, hsla(0, 6%, 28%, 1) 99%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(32, 6%, 45%, 1) 0%, hsla(30, 4%, 40%, 1) 13%, hsla(0, 3%, 28%, 1) 85%, hsla(0, 6%, 28%, 1) 99%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7B746C", endColorstr="#696561", GradientType=1 );
+}
+
+.nav ul {
     margin: 0;
 }
 
-.main-nav li {
+.nav li {
     display: inline;
-    padding: 5px;
 }
 
-.main-nav a {
+.nav a {
     display: inline-block;
+    padding: .5em;
     color: white;
     text-decoration: none;
-    border-bottom: 1px solid whitesmoke;
 }
 
 .main-nav {
-    padding: 5px;
     text-align: center;
     font-size: 1.1em;
     font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3)
 }
 
-.main-nav li:hover {
-    background-color: rgb(93, 93, 93);
+.main-nav li {
+    padding: 0 5%;
 }
-
 
 .nav a:hover {
     background-color: rgba(255, 255, 255, .3)
 }
 
-.main-header {
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/menu_picture.jpg);
-    background-size:cover;
-    height: 60vh;
-    background-attachment: fixed;
-    padding-top: 60px;
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 95px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+
+  .card {
+    position:fixed;
+    top: 0;
+    left: 75%;
+    width: 400px;
+    background-color: #453E3B;
+    height: 100vh;
+    overflow-y: scroll;
 }
-.forms{
-    text-align: center;
- 
-    margin: 50px;
-}
-#desc{
-    width: 500px;
+
+.card h1 {
+    color: white;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
     height: 80px;
+    display: flex;
+    align-items: center;
 }
-input{
-    border: solid black 5 px;
+
+.card .checkOut {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    display: grid;
 }
+
+.card .checkOut div{
+    background: white;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card .checkOut div:nth-child(2){
+    background-color: black;
+    color: white;
+}
+
+.listCard{
+    overflow-y: scroll;
+}
+
+.listCard li{
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: white;
+    row-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.listCard li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listCard li img{
+    width: 40%;
+}
+
+.listCard button{
+    width: auto;
+}
+
+.listCard .count{
+    margin: 0 10px;
+}
+
+
 .main-footer {  
     background: hsla(32, 6%, 45%, 1);
 
@@ -119,6 +254,7 @@ input{
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7B746C", endColorstr="#696561", GradientType=1 );
     color: white;
     padding: .25em 0;
+    
 }
 
 .main-footer-container {
