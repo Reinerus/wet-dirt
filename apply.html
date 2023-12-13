@@ -8,66 +8,57 @@
 </head><header class="main-header">
     <nav class="main-nav nav">
         <ul>
-            <li><a href="home.html">HOME</a></li>
-            <li><a href="newMenu.html">MENU</a></li>
-            <li><a href="about.HTML">ABOUT</a></li>
-            <li><a href="home.html#about">MISSION STATEMENT</a></li>
-            <li><a href="#">MERCH</a></li>
-            <li><a href="apply.html">APPLY</a></li>
-            <li><a href="#contact">CONTACT US</a></li>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="newMenu.html">MENU</a></li>
+          <li><a href="about.HTML">ABOUT</a></li>
+          <li><a href="home.html#about">MISSION STATEMENT</a></li>
+          <li><a href="merch.html">MERCH</a></li>
+          <li><a href="apply.html">APPLY</a></li>
+          <li><a href="#contact">CONTACT US</a></li>
         </ul>
     </nav>
 </header>
-<body>
-    <div class="forms">
-    <center><h1>Welcome, Future Employee.</h1></center>
-    <center><h1>Use the form below to apply!</h1></center>
-    <form>
-        <label for="name">Full Name:</label><br>
-        <input type="text" id="name" name="name"><br>
-        <br>
-        <label for="num">Phone Number:</label><br>
-        <input type="text" id="num" name="num"><br>
-        <br>     
-        <label for="tsc">Time spent convicted:</label><br>
-        <input type="text" id="tsc" name="tsc"><br>
-        <br>
-        <label for="desc">Short Description:</label><br>
-        <br>
-        <input type="text" id="desc" name="desc"><br>
-        <br>
-        <input type="submit" value="Submit">
-        <br><br><br><br><br><br>
+
+    <div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+
+        <div class="row">
+          <div class="col-50">
+            <h3>Work Application</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="New York">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+            <div class="row">
+                <div class="insertResume">
+                <label for="myfile">Insert Resume:</label>
+                <input type="file" id="myfile" name="myfile">
+                </div>
+            </div>
+          </div>
+        </div>
+        <label>
+        </label>
+        <input type="submit" value="Finish Application!" class="btn">
       </form>
     </div>
-    <br><br><br><br>
-      <footer class="main-footer">
-        <div class="container main-footer-container">
-            <h3 class="band-name">Wet-Dirt©</h3>
-            <ul class="nav footer-nav">
-                <li>
-                    <a href="https://www.youtube.com" target="_blank">
-                        <img src="images/youtube-icon-white-31.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com" target="_blank">
-                        <img src="images/1-14885_instagram-logo-transparent-instagram-logo-vector.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.twitter.com" target="_blank">
-                        <img src="images/twitter-png-twitter-icon-1600 (1).png">
-                    </a>
-                </li>
-                <li><a href="mlogin.html">Admin Login</a></li>
-            </ul>
-        </div>
-    </footer>
-
-
-
-
-    </div> 
+  </div>
 </body>
 </html>
