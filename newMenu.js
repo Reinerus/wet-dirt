@@ -8,11 +8,13 @@ let quantity = document.querySelector('.quantity');
 
 openShopping.addEventListener('click', ()=>{
     body.classList.add('active');
-})
+});
 
 closeShopping.addEventListener('click', ()=>{
     body.classList.remove('active');
-})
+});
+
+let savedProducts = JSON.parse(localStorage.getItem('products'))
 
 let products = [
     {
@@ -220,4 +222,40 @@ function changeQuantity(key, quantity){
         listCards[key].price = quantity * prices;
     }
     reloadCard();
+<<<<<<< Updated upstream
 }
+=======
+}
+localStorage.setItem('listCards[key]', JSON.stringify(listCards[key]));
+
+var myButton = document.getElementById("myButton");
+myButton.addEventListener("click", function() {
+  var myInput = document.getElementById("myInput");
+  var inputValue = myInput.value;
+  console.log(inputValue);
+});
+
+function checkOut(){
+    location.replace("payment.html")
+}
+
+function storeproductdata() {
+    var id = document.getElementById("id").value;
+    var desc = document.getElementById("desc").value;
+    var price = document.getElementById("price").value;
+
+    var newProduct = {
+        id: id,
+        price: price,
+        desc: desc,
+    };
+
+    var storedData = JSON.parse(localStorage.getItem("products")) || [];
+    storedData.push(newProduct);
+    console.log(id);
+    localStorage.setItem("products", JSON.stringify(storedData));
+}
+
+var storedData = JSON.parse(localStorage.getItem("products")) || [];
+products = products.concat(storedData);
+>>>>>>> Stashed changes
