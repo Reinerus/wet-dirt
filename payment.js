@@ -61,3 +61,7 @@ function changeQuantity(key, quantity){
     }
     reloadCard();
 }
+
+function printRec(){
+    location.replace("rec.html")
+}

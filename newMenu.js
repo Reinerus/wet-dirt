@@ -8,11 +8,13 @@ let quantity = document.querySelector('.quantity');
 
 openShopping.addEventListener('click', ()=>{
     body.classList.add('active');
-})
+});
 
 closeShopping.addEventListener('click', ()=>{
     body.classList.remove('active');
-})
+});
+
+let savedProducts = JSON.parse(localStorage.getItem('products'))
 
 let products = [
     {
@@ -244,6 +246,7 @@ function changeQuantity(key, quantity){
     saveCartToStorage()
     reloadCard();
 }
+
 localStorage.setItem('listCards[key]', JSON.stringify(listCards[key]));
 
 var myButton = document.getElementById("myButton");
@@ -276,4 +279,5 @@ function storeproductdata() {
 }
 
 var storedData = JSON.parse(localStorage.getItem("products")) || [];
+
 products = products.concat(storedData);
