@@ -286,13 +286,6 @@ header .shopping span{
     cursor: pointer;
 }
 
-
-footer {
-    background-color: #453E3B;
-    height: fit-content;
-}
-
-
 .socials{
     font-size: 10px;
     display: inline-block;
@@ -309,4 +302,34 @@ footer {
     color: #bfbfbf;
     text-align: center;
     text-decoration: none;
+}
+
+.footer-nav {
+    margin-top: 20px;
+    height: 30px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 10px;
+}
+.footer-nav img {
+    margin: auto;
+}
+.footer-nav ul {
+    margin: auto;
+}
+
+.footer-nav li {
+    display: inline;
+    padding: 5px;
+    margin: auto;
+}
+
+.footer-nav a {
+    display: inline-block;
+    color: rgb(169, 169, 169);
+    text-decoration: none;
+}
+.footer-nav a:hover {
+  text-decoration: underline;
+  color: rgb(133, 133, 133);
 }
