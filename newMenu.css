@@ -251,39 +251,6 @@ header .shopping span{
     margin: 0 10px;
 }
 
-.main-footer {  
-    background: hsla(32, 6%, 45%, 1);
-
-    background: linear-gradient(90deg, hsla(32, 6%, 45%, 1) 0%, hsla(30, 4%, 40%, 1) 13%, hsla(0, 3%, 28%, 1) 85%, hsla(0, 6%, 28%, 1) 99%);
-    
-    background: -moz-linear-gradient(90deg, hsla(32, 6%, 45%, 1) 0%, hsla(30, 4%, 40%, 1) 13%, hsla(0, 3%, 28%, 1) 85%, hsla(0, 6%, 28%, 1) 99%);
-    
-    background: -webkit-linear-gradient(90deg, hsla(32, 6%, 45%, 1) 0%, hsla(30, 4%, 40%, 1) 13%, hsla(0, 3%, 28%, 1) 85%, hsla(0, 6%, 28%, 1) 99%);
-    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7B746C", endColorstr="#696561", GradientType=1 );
-    color: white;
-    padding: .25em 0;
-}
-
-.main-footer-container {
-    color:transparent;
-    display: flex;
-    align-items: center;
-}
-
-.main-footer-container ul {
-    flex-grow: 1;
-    text-align: end;
-}
-
-.footer-nav li {
-    padding: 0 .5em;
-}
-
-.footer-nav img {
-    width: 30px;
-    height: 30px;
-}
 
 .sectionOne {
     height: 60vh;
@@ -317,4 +284,29 @@ header .shopping span{
 .applytoday input{
     margin: auto;
     cursor: pointer;
+}
+
+
+footer {
+    background-color: #453E3B;
+    height: fit-content;
+}
+
+
+.socials{
+    font-size: 10px;
+    display: inline-block;
+}
+.socials p{
+    color: #bfbfbf;
+}
+.team{
+    color: #bfbfbf;
+    display: inline-block;
+}
+.team p{
+    font-size: 10px;
+    color: #bfbfbf;
+    text-align: center;
+    text-decoration: none;
 }
