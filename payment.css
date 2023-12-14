@@ -226,37 +226,32 @@ html, body {
     margin: 0 10px;
 }
 
-
-.main-footer {  
-    background: hsla(32, 6%, 45%, 1);
-
-    background: linear-gradient(90deg, hsla(32, 6%, 45%, 1) 0%, hsla(30, 4%, 40%, 1) 13%, hsla(0, 3%, 28%, 1) 85%, hsla(0, 6%, 28%, 1) 99%);
-    
-    background: -moz-linear-gradient(90deg, hsla(32, 6%, 45%, 1) 0%, hsla(30, 4%, 40%, 1) 13%, hsla(0, 3%, 28%, 1) 85%, hsla(0, 6%, 28%, 1) 99%);
-    
-    background: -webkit-linear-gradient(90deg, hsla(32, 6%, 45%, 1) 0%, hsla(30, 4%, 40%, 1) 13%, hsla(0, 3%, 28%, 1) 85%, hsla(0, 6%, 28%, 1) 99%);
-    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7B746C", endColorstr="#696561", GradientType=1 );
-    color: white;
-    padding: .25em 0;
-    
+.footer-nav {
+    margin-top: 20px;
+    height: 30px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 10px;
 }
-
-.main-footer-container {
-    display: flex;
-    align-items: center;
+.footer-nav img {
+    margin: auto;
 }
-
-.main-footer-container ul {
-    flex-grow: 1;
-    text-align: end;
+.footer-nav ul {
+    margin: auto;
 }
 
 .footer-nav li {
-    padding: 0 .5em;
+    display: inline;
+    padding: 5px;
+    margin: auto;
 }
 
-.footer-nav img {
-    width: 30px;
-    height: 30px;
+.footer-nav a {
+    display: inline-block;
+    color: rgb(169, 169, 169);
+    text-decoration: none;
+}
+.footer-nav a:hover {
+  text-decoration: underline;
+  color: rgb(133, 133, 133);
 }
