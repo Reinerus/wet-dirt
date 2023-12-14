@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding-left: 2%;
+    
+}
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: black;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background: rgb(255, 255, 255);
+
+}
+
+.aboutus {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    -webkit-text-stroke: #453E3B; 
+    font-size: 45px;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+    text-decoration: underline;
+}
+.aboutustwo {
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+    width: 600px;
+}
+
+.main-header {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/about_picture.jpg);
+    background-size:cover;
+    height: 60vh;
+    background-attachment: fixed;
+    padding-top: 60px;
+}
+.main-nav {
+    padding: 5px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+.main-nav ul {
+    margin: 0;
+}
+
+.main-nav li {
+    display: inline;
+    padding: 5px;
+}
+
+.main-nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.main-nav {
+    padding: 5px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+
+.main-nav li:hover {
+    background-color: rgb(93, 93, 93);
+}
+
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3)
+}
+
+h1{
+    text-align: center;
+    margin: 0 auto; 
+    width:250px;
+    color: black;
+}
+
+.form
+{
+    background-color: white;
+    opacity: 0.89;
+}
+
+.form h2
+{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.form-box
+{
+    position: absolute;
+    width: 50%;
+    height: 420px;
+    margin-top: -855px;
+    margin-left: 50%;
+}  
+.form-box .send
+{
+    text-align: center;
+}
+
+.send p2
+{
+    border: 0;
+    border-radius: 100px;
+    height: 50px;
+    width:150px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    color: white;
+}
+
+.send p2:hover
+{
+    background-color: #ffffff;
+}
+
+.input
+{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.form p
+{
+    display: inline;
+}
+
+
+
+
+
+
+.footer-nav {
+    margin-top: 20px;
+    height: 30px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 10px;
+}
+.footer-nav img {
+    margin: auto;
+}
+.footer-nav ul {
+    margin: auto;
+}
+
+.footer-nav li {
+    display: inline;
+    padding: 5px;
+    margin: auto;
+}
+
+.footer-nav a {
+    display: inline-block;
+    color: rgb(169, 169, 169);
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+    color: rgb(133, 133, 133);
+
+}
