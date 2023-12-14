@@ -158,7 +158,7 @@ let products = [
         price: 33.99
     },
 ];
-var storedItems = localStorage.getItem("cartItems");
+var storedItems = localStorage.getItem("storeproductdata");
 
 if (storedItems) {
     var items = JSON.parse(storedItems);
